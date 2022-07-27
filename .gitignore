@@ -12,6 +12,8 @@ artifacts
 
 # nile
 127.0.0.1.*
-
+localhost.*
 # Protostar
 build
+
+nohup.out

@@ -11,6 +11,7 @@ def get_tournament_address():
 
 def send(account, to, method, calldata, type="invoke"):
     """Execute a tx going through an Account contract."""
+    return account.send(to, method, calldata)
     target_address, _ = next(deployments.load(to, account.network)) or to
     calldata = [int(x, base=16) for x in calldata]
 
